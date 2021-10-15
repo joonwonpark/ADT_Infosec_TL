@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>전체 학생 리스트</title>
+</head>
+<body>
+    <h1 align="center">전체 학생 리스트</h1>
+    {# if student_list : student_list 변수가 존재하면 True, 존재하지 않으면 False #}
+    {% if student_list %}
+    <table align="center" border="1">
+        <tr>
+            <td width="150">학번</td>
+            <td width="150">이름</td>
+            <td width="150">학과</td>
+            <td width="150">평점</td>
+            <td width="150">동아리</td>
+            <td width="150">삭제</td>
+            <td width="150">수정</td>
+        </tr>
+        {#
+            student_list에서 아이템 1개씩 순서대로 변수 student 에 대입
+            변수 student_list는 전체 학생정보가 저장된 리스트 이므로 변수 student 에는 학생 1명의 정보가 순서대로 대입됨
+        #}
+        {% for student in student_list %}
+        {#
+            변수 student 는 dictionary 객체로 다음과 같은 정보가 저장되 있음
+            {"univ_id":"학번","univ_id":"이름","univ_id":"학과","univ_id":"평점","univ_id":"동아리"}
+        #}
+            <tr>
+                {# student 변수의 학번을 출력 #}
+                <td>{{student.univ_id}}</td>
+                {# student 변수의 이름을 출력 #}
+                <td>{{student.univ_name}}</td>
+                {# student 변수의 학과를 출력 #}
+                <td>{{student.major}}</td>
+                {# student 변수의 펴점을 출력 #}
+                <td>{{student.avg_credit}}</td>
+                {# student 변수의 동아리를 출력 #}
+                <td>{{student.circle}}</td>
+                <td>
+                    {# 학생정보 삭제 버튼 #}
+                    <form action="RemoveStudent" method="post">
+                        <input type="hidden" name="univ_id" value="{{student.univ_id}}"/>
+                        <input type="hidden" name="univ_name" value="{{student.univ_name}}"/>
+                        <input type="submit" value="삭제">
+                    </form>
+                </td>
+                <td>
+                    {# 학생정보 수정 버튼 #}
+                    <form action="EditStudentForm" method="post">
+                        <input type="hidden" name="univ_id" value="{{student.univ_id}}"/>
+                        <input type="hidden" name="univ_name" value="{{student.univ_name}}"/>
+                        <input type="submit" value="수정">
+                    </form>
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+    {# student_list 변수가 존재 하지 않을 때 #}
+    {% else %}
+    <p>학생정보가 없습니다.</p>
+    {% endif %}
+    <p align="center">
+        <a href="AddStudentForm">학생 추가</a>
+    </p>
+</body>
+</html>

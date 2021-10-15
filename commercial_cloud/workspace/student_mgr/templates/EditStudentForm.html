@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>학생정보 수정</title>
+</head>
+<body>
+    <form action="EditStudent" method="post">
+        학번:<input name="univ_id" value="{{student.univ_id}}" readonly/><br/>
+        이름:<input name="univ_name" value="{{student.univ_name}}" readonly><br/>
+        학과:<input name="major" value="{{student.major}}"><br/>
+        학점:<input name="avg_credit" value="{{student.avg_credit}}"><br/>
+        동아리:<input name="circle" value="{{student.circle}}"><br/>
+        <input type="submit" value="수정">
+    </form>
+</body>
+</html>

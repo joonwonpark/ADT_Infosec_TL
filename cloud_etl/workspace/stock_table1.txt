@@ -1,0 +1,38 @@
+drop table if exists `history_d`; 
+
+drop table if exists `stock`;
+
+CREATE TABLE `stock` (
+  `STK_CD` varchar(40) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL COMMENT '종목코드',
+  `STK_NM` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT '종목명',
+  `EX_CD` varchar(40) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT '거래소코드',
+  `NAT_CD` varchar(40) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT '국가코드',
+  `SEC_NM` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT '섹터명',
+  `STK_TP_NM` varchar(200) DEFAULT NULL COMMENT '주식유형',
+  PRIMARY KEY (`STK_CD`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='종목';
+
+CREATE TABLE `history_dt` (
+  `STK_CD` varchar(40) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL COMMENT '종목코드',
+  `DT` date NOT NULL COMMENT '일자',
+  `O_PRC` decimal(18,3) DEFAULT NULL COMMENT '시작가',
+  `H_PRC` decimal(18,3) DEFAULT NULL COMMENT '고가',
+  `L_PRC` decimal(18,3) DEFAULT NULL COMMENT '저가',
+  `C_PRC` decimal(18,3) DEFAULT NULL COMMENT '종가',
+  `VOL` decimal(18,3) DEFAULT NULL COMMENT '거래량',
+  `CHG_RT` decimal(18,3) DEFAULT NULL COMMENT '등락률',
+  `M3_PRC` decimal(18,3) DEFAULT NULL COMMENT '3일이동평균',
+  `M5_PRC` decimal(18,3) DEFAULT NULL COMMENT '5일이동평균',
+  `M10_PRC` decimal(18,3) DEFAULT NULL COMMENT '10일이동평균',
+  `M20_PRC` decimal(18,3) DEFAULT NULL COMMENT '20일이동평균',
+  `M60_PRC` decimal(18,3) DEFAULT NULL COMMENT '60일이동평균',
+  `M3_VOL` decimal(18,3) DEFAULT NULL COMMENT '3일거래평균',
+  `M5_VOL` decimal(18,3) DEFAULT NULL COMMENT '5일거래평균',
+  `M10_VOL` decimal(18,3) DEFAULT NULL COMMENT '10일거래평균',
+  `M20_VOL` decimal(18,3) DEFAULT NULL COMMENT '20일거래평균',
+  `M60_VOL` decimal(18,3) DEFAULT NULL COMMENT '60일거래평균',
+  `STK_DT_NO` int DEFAULT NULL COMMENT '종목별일자순번',
+  PRIMARY KEY (`STK_CD`,`DT`),
+  KEY `IX_HISTORY_DT_01` (`STK_CD`,`STK_DT_NO`,`C_PRC`),
+  KEY `IX_HISTORY_DT_02` (`DT`,`STK_CD`,`C_PRC`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='일별주가';

@@ -211,3 +211,4 @@ dmypy.json
 *.zip
 *.sql
 *.h5
+*.data-00000-of-00001

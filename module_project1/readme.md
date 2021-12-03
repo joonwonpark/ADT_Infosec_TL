@@ -7,13 +7,13 @@
 
 ## 1. 사용 환경
 
-![Untitled](%E1%84%8F%E1%85%A9%E1%84%85%E1%85%A9%E1%84%82%E1%85%A1%20%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%20%E1%84%87%E1%85%AE%E1%86%AB%E1%84%89%E1%85%A5%E1%86%A8%2016742d4883ee4c40bc054aa1c395a858/Untitled.png)
+![Untitled](readme_image/Untitled.png)
 
 ---
 
 ## 2. 일별 확진자 수 그래프
 
-![Untitled](%E1%84%8F%E1%85%A9%E1%84%85%E1%85%A9%E1%84%82%E1%85%A1%20%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%20%E1%84%87%E1%85%AE%E1%86%AB%E1%84%89%E1%85%A5%E1%86%A8%2016742d4883ee4c40bc054aa1c395a858/Untitled%201.png)
+![Untitled](readme_image/Untitled%201.png)
 
 ---
 
@@ -21,18 +21,18 @@
 
  
 
-![Untitled](%E1%84%8F%E1%85%A9%E1%84%85%E1%85%A9%E1%84%82%E1%85%A1%20%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%20%E1%84%87%E1%85%AE%E1%86%AB%E1%84%89%E1%85%A5%E1%86%A8%2016742d4883ee4c40bc054aa1c395a858/Untitled%202.png)
+![Untitled](readme_image/Untitled%202.png)
 
 ---
 
 ## 4. 용의자별 피해 규모
 
-![Untitled](%E1%84%8F%E1%85%A9%E1%84%85%E1%85%A9%E1%84%82%E1%85%A1%20%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%20%E1%84%87%E1%85%AE%E1%86%AB%E1%84%89%E1%85%A5%E1%86%A8%2016742d4883ee4c40bc054aa1c395a858/Untitled%203.png)
+![Untitled](readme_image/Untitled%203.png)
 
 ---
 
 ## 5. 결과
 
-![Untitled](%E1%84%8F%E1%85%A9%E1%84%85%E1%85%A9%E1%84%82%E1%85%A1%20%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%20%E1%84%87%E1%85%AE%E1%86%AB%E1%84%89%E1%85%A5%E1%86%A8%2016742d4883ee4c40bc054aa1c395a858/Untitled%204.png)
+![Untitled](readme_image/Untitled%204.png)
 
 ---

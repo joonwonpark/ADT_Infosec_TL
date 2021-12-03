@@ -11,7 +11,7 @@
 
 ## 1.1 LeNet
 
-![Untitled](UFC101%20%E1%84%8B%E1%85%A7%E1%86%BC%E1%84%89%E1%85%A1%E1%86%BC%20%E1%84%87%E1%85%AE%E1%86%AB%E1%84%85%E1%85%B2%20b1bce161313a49049d8633e846594ca9/Untitled.png)
+![Untitled](readme_image/Untitled.png)
 
 ---
 
@@ -19,13 +19,13 @@
 
 ## 1.2. VGG
 
-![Untitled](UFC101%20%E1%84%8B%E1%85%A7%E1%86%BC%E1%84%89%E1%85%A1%E1%86%BC%20%E1%84%87%E1%85%AE%E1%86%AB%E1%84%85%E1%85%B2%20b1bce161313a49049d8633e846594ca9/Untitled%201.png)
+![Untitled](readme_image/Untitled%201.png)
 
 ---
 
 ## 1.3. ResNet
 
-![Untitled](UFC101%20%E1%84%8B%E1%85%A7%E1%86%BC%E1%84%89%E1%85%A1%E1%86%BC%20%E1%84%87%E1%85%AE%E1%86%AB%E1%84%85%E1%85%B2%20b1bce161313a49049d8633e846594ca9/Untitled%202.png)
+![Untitled](readme_image/Untitled%202.png)
 
 ---
 
@@ -33,21 +33,21 @@
 
 ## 1.4. NasNetLarge
 
-![Untitled](UFC101%20%E1%84%8B%E1%85%A7%E1%86%BC%E1%84%89%E1%85%A1%E1%86%BC%20%E1%84%87%E1%85%AE%E1%86%AB%E1%84%85%E1%85%B2%20b1bce161313a49049d8633e846594ca9/Untitled%203.png)
+![Untitled](readme_image/Untitled%203.png)
 
 ## 1.5. ResNext
 
-![Untitled](UFC101%20%E1%84%8B%E1%85%A7%E1%86%BC%E1%84%89%E1%85%A1%E1%86%BC%20%E1%84%87%E1%85%AE%E1%86%AB%E1%84%85%E1%85%B2%20b1bce161313a49049d8633e846594ca9/Untitled%204.png)
+![Untitled](readme_image/Untitled%204.png)
 
 ## 1.6. VGG16 + GRU
 
-![Untitled](UFC101%20%E1%84%8B%E1%85%A7%E1%86%BC%E1%84%89%E1%85%A1%E1%86%BC%20%E1%84%87%E1%85%AE%E1%86%AB%E1%84%85%E1%85%B2%20b1bce161313a49049d8633e846594ca9/Untitled%205.png)
+![Untitled](readme_image/Untitled%205.png)
 
 ---
 
 ## 1.7. VGG19 + LSTM
 
-![Untitled](UFC101%20%E1%84%8B%E1%85%A7%E1%86%BC%E1%84%89%E1%85%A1%E1%86%BC%20%E1%84%87%E1%85%AE%E1%86%AB%E1%84%85%E1%85%B2%20b1bce161313a49049d8633e846594ca9/Untitled%206.png)
+![Untitled](readme_image/Untitled%206.png)
 
 # 2. 정확도 낮은 모델 분석
 
@@ -55,7 +55,7 @@
 
 - 사용 모델 : OpenPose
 
-![Untitled](UFC101%20%E1%84%8B%E1%85%A7%E1%86%BC%E1%84%89%E1%85%A1%E1%86%BC%20%E1%84%87%E1%85%AE%E1%86%AB%E1%84%85%E1%85%B2%20b1bce161313a49049d8633e846594ca9/Untitled%207.png)
+![Untitled](readme_image/Untitled%207.png)
 
 ---
 
@@ -63,7 +63,7 @@
 
 - OpenCV를 사용해 'person' 기준 프레임 자르기
 
-![Untitled](UFC101%20%E1%84%8B%E1%85%A7%E1%86%BC%E1%84%89%E1%85%A1%E1%86%BC%20%E1%84%87%E1%85%AE%E1%86%AB%E1%84%85%E1%85%B2%20b1bce161313a49049d8633e846594ca9/Untitled%208.png)
+![Untitled](readme_image/Untitled%208.png)
 
 ## 2.3 결과
 
